@@ -16,12 +16,13 @@
     }
     .btn1{
         width: 60px;
-        margin: auto;
+        margin-left: 150px;
     }     
 
  </style>
 </head>
 <body>
+    <form action="">
     <div class="tab">
 
         <table >
@@ -30,7 +31,7 @@
             </tr>
             <tr>
                 <td>FullName:</td>
-                <td><input type="text" placeholder="FullName"></td>
+                <td><input type="text" placeholder="FullName" required></td>
             </tr>
             <tr>
                 <td>LastName:</td>
@@ -38,19 +39,19 @@
             </tr>
             <tr>
                 <td><label for="">Street Adress</label></td>
-                <td><textarea name="" id="" cols="30" rows="10" placeholder="textarea"></textarea></td>
+                <td><textarea name="" id="" cols="30" rows="10" placeholder="textarea" maxlength="25"></textarea></td>
             </tr>
             <tr>
                 <td><label for="">Address</label></td>
-                <td><textarea name="" id="" cols="30" rows="10"></textarea></td>
+                <td><textarea name="" id="" cols="30" rows="10" required></textarea></td>
                </tr>
                <tr>
                 <td><label for="">Email</label></td>
-                <td><input type="email"></td>
+                <td><input type="email" required></td>
                </tr>
             <tr>
                 <td><label for="">Mobile</label></td>
-                <td><input type="text"></td>
+                <td><input type="text" maxlength="10" pattern="[1-9]{1}[0-9]{9}" required></td>
             </tr>
            <tr>
             <td><label for="">Country</label></td>
@@ -70,10 +71,10 @@
            </tr>
 
            <tr>
-            <td colspan="2" ><input type="button" value="login" class="btn1" ></td>
+            <td colspan="2" ><input type="submit" value="login" class="btn1" ></td>
            </tr>
         </table>
     </div>
-    
+</form> 
 </body>
 </html>
